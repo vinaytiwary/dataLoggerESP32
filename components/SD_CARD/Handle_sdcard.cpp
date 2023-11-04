@@ -221,7 +221,7 @@ void SD_file_Save()               //Vinay 21-07-2023
       fclose(f); 
     }
 }
-
+#if 0
 void get_random_data()
 {
   /* ram_data.time_stamp.yy = rand()%30;
@@ -237,7 +237,7 @@ void get_random_data()
   ram_data.accuracy = rand()%2;
   memset(buffer1,0,sizeof(buffer1)); */
 }
-
+#endif
 void update_ram_data(void)
 {
     static int sd_wr_rate;
