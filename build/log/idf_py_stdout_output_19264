@@ -1,0 +1,34 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\bootloader\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/7] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:23:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: In function 'void app_main()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:128:20: warning: unused variable 'counter' [-Wunused-variable]
+  128 |         static int counter=0;
+      |                    ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:128:20: warning: 'counter' defined but not used [-Wunused-variable]
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:14:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable DL_cpp_test.elf
+FAILED: DL_cpp_test.elf 
+cmd.exe /C "cd . && C:\Users\DELL\esp\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -mlongcalls -Wno-frame-address -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32=0 -Wl,--Map=D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.map -Wl,--no-warn-rwx-segments -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32.peripherals.ld -T esp32.rom.ld -T esp32.rom.api.ld -T esp32.rom.libgcc.ld -T esp32.rom.newlib-data.ld -T esp32.rom.syscalls.ld -T esp32.rom.newlib-funcs.ld -T memory.ld -T sections.ld @CMakeFiles\DL_cpp_test.elf.rsp -o DL_cpp_test.elf  && cd ."
+c:/users/dell/esp/espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(DL_cpp_test.cpp.obj):(.literal.app_main+0x34): undefined reference to `eeproSdmWriteRate()'
+c:/users/dell/esp/espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/12.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: esp-idf/main/libmain.a(DL_cpp_test.cpp.obj): in function `app_main':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:87: undefined reference to `eeproSdmWriteRate()'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

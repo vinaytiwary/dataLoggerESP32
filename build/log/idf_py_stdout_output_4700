@@ -1,0 +1,60 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\bootloader\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/7] Building CXX object esp-idf/SD_CARD/CMakeFiles/__idf_SD_CARD.dir/Handle_sdcard.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:26:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void init_sdcard()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:83:5: warning: missing initializer for member 'esp_vfs_fat_mount_config_t::disk_status_check_enable' [-Wmissing-field-initializers]
+   83 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::data4_io_num' [-Wmissing-field-initializers]
+   99 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::data5_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::data6_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::data7_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::isr_cpu_id' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:99:5: warning: missing initializer for member 'spi_bus_config_t::intr_flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void printHeader()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:159:11: warning: unused variable 'i' [-Wunused-variable]
+  159 |       int i = 0;
+      |           ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'char read_sdcard(const char*, long int)':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:398:19: warning: left shift count >= width of type [-Wshift-count-overflow]
+  398 |   GPIO.out |= (1UL<<32);
+      |                ~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:438:20: warning: left shift count >= width of type [-Wshift-count-overflow]
+  438 |   GPIO.out &= ~(1UL<<32);
+      |                 ~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:59:17: warning: 'log_no' defined but not used [-Wunused-variable]
+   59 | static uint32_t log_no=0;
+      |                 ^~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:29:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:21:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\SD_CARD\libSD_CARD.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable DL_cpp_test.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin
+[7/7] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/partition_table/partition-table.bin D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin"
+DL_cpp_test.bin binary size 0x576a0 bytes. Smallest app partition is 0x100000 bytes. 0xa8960 bytes (66%) free.

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/CMakeFiles/bootloader
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/CMakeFiles/bootloader.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/CMakeFiles/bootloader-complete.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

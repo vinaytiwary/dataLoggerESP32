@@ -1,0 +1,23 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\bootloader\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/7] Building CXX object esp-idf/MCP23017/CMakeFiles/__idf_MCP23017.dir/mcp23017.cpp.obj
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/MCP23017/mcp23017.cpp: In function 'void read_data()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/MCP23017/mcp23017.cpp:344:15: warning: unused variable 'ret' [-Wunused-variable]
+  344 |     esp_err_t ret = read_accel_data(I2C_NUM_0, 0x28, reg_data, sizeof(reg_data)); // Read from the OUT_X_L register
+      |               ^~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/MCP23017/mcp23017.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/MCP23017/mcp23017.cpp:11:20: warning: 'TAG' defined but not used [-Wunused-variable]
+   11 | static const char* TAG = "LIS3DHTR";
+      |                    ^~~
+[3/7] Linking C static library esp-idf\MCP23017\libMCP23017.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable DL_cpp_test.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin
+[7/7] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/partition_table/partition-table.bin D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin"
+DL_cpp_test.bin binary size 0x579a0 bytes. Smallest app partition is 0x100000 bytes. 0xa8660 bytes (66%) free.

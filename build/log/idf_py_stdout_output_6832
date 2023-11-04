@@ -1,0 +1,249 @@
+[1/27] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\bootloader\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/25] Building CXX object esp-idf/ERROR/CMakeFiles/__idf_ERROR.dir/error.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ERROR/error.cpp:9:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ERROR/error.cpp:5:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[3/25] Building CXX object esp-idf/SD_CARD/CMakeFiles/__idf_SD_CARD.dir/Handle_sdcard.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:26:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void init_sdcard()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:76:5: warning: missing initializer for member 'esp_vfs_fat_mount_config_t::disk_status_check_enable' [-Wmissing-field-initializers]
+   76 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data4_io_num' [-Wmissing-field-initializers]
+   92 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data5_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data6_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data7_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::isr_cpu_id' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::intr_flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void deinitialize_sdcard()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:149:30: warning: 'esp_err_t esp_vfs_fat_sdmmc_unmount()' is deprecated: Please use esp_vfs_fat_sdcard_unmount instead [-Wdeprecated-declarations]
+  149 |     esp_vfs_fat_sdmmc_unmount();
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:10:
+C:/Users/DELL/esp/esp-idf/components/fatfs/vfs/esp_vfs_fat.h:197:11: note: declared here
+  197 | esp_err_t esp_vfs_fat_sdmmc_unmount(void) __attribute__((deprecated("Please use esp_vfs_fat_sdcard_unmount instead")));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:148:19: warning: unused variable 'card' [-Wunused-variable]
+  148 |     sdmmc_card_t* card;
+      |                   ^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:58:17: warning: 'log_no' defined but not used [-Wunused-variable]
+   58 | static uint32_t log_no=0;
+      |                 ^~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:29:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:21:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[4/25] Building CXX object esp-idf/EEPROM/CMakeFiles/__idf_EEPROM.dir/EEPROM.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/EEPROM/EEPROM.cpp:13:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/EEPROM/EEPROM.cpp:12:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[5/25] Building CXX object esp-idf/GPS/CMakeFiles/__idf_GPS.dir/gps.cpp.obj
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp: In function 'void get_location()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:42:18: warning: unused variable 'make_fraction' [-Wunused-variable]
+   42 |         uint32_t make_fraction = 1;//, local_log_num = ram_data.log_num;
+      |                  ^~~~~~~~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp: In function 'bool cbc_pkt_parsing(char*)':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1512:13: warning: unused variable 'cnt' [-Wunused-variable]
+ 1512 |     uint8_t cnt = 0,  i = 0, j = 0;
+      |             ^~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1512:30: warning: unused variable 'j' [-Wunused-variable]
+ 1512 |     uint8_t cnt = 0,  i = 0, j = 0;
+      |                              ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp: In function 'bool gnss_pkt_parsing(char*)':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1532:14: warning: unused variable 'tmp' [-Wunused-variable]
+ 1532 |         char tmp[4] = {0};
+      |              ^~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp: In function 'void updateGpsDateTimeToBuff(gps_date_time_t*)':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1922:24: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+ 1922 |         ((temp_time.hr < 0) || (temp_time.hr > 23)) ||
+      |           ~~~~~~~~~~~~~^~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1923:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+ 1923 |         ((temp_time.min < 0) || (temp_time.min > 59)) ||
+      |           ~~~~~~~~~~~~~~^~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1924:25: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+ 1924 |         ((temp_time.sec < 0) || (temp_time.sec > 59)))
+      |           ~~~~~~~~~~~~~~^~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1934:32: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1934 |                 ((temp_time.hr >= 0) && (temp_time.hr <= 23)) &&
+      |                   ~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1935:33: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1935 |                 ((temp_time.min >= 0) && (temp_time.min <= 59)) &&
+      |                   ~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:1936:33: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1936 |                 ((temp_time.sec >= 0) && (temp_time.sec <= 59)))
+      |                   ~~~~~~~~~~~~~~^~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:13:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS/gps.cpp:12:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+[6/25] Building CXX object esp-idf/app_comm/CMakeFiles/__idf_app_comm.dir/app_comm.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/app_comm/app_comm.cpp:7:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/app_comm/app_comm.cpp:6:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+[7/25] Building CXX object esp-idf/GPIO/CMakeFiles/__idf_GPIO.dir/GPIO.cpp.obj
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPIO/GPIO.cpp: In function 'void init_gpio()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPIO/GPIO.cpp:47:25: warning: left shift count >= width of type [-Wshift-count-overflow]
+   47 |     GPIO.enable &= ~(1UL<<ESP_NRF_CS);
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPIO/GPIO.cpp:48:21: warning: left shift count >= width of type [-Wshift-count-overflow]
+   48 |     GPIO.out |= (1UL<<ESP_NRF_CS);
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPIO/GPIO.cpp:18:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPIO/GPIO.cpp:15:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+[8/25] Building CXX object esp-idf/Clock/CMakeFiles/__idf_Clock.dir/clock.cpp.obj
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp: In function 'uint8_t check_RTC_time()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:247:31: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  247 |            ((ram_data.time.hr >= 0) && (ram_data.time.hr <= 23)) &&
+      |              ~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:248:32: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  248 |            ((ram_data.time.min >= 0) && (ram_data.time.min <= 59)) &&
+      |              ~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:249:32: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  249 |            ((ram_data.time.sec >= 0) && (ram_data.time.sec <= 59)))
+      |              ~~~~~~~~~~~~~~~~~~^~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:11:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:6:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[9/25] Building CXX object esp-idf/GPRS/CMakeFiles/__idf_GPRS.dir/gprs.cpp.obj
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp: In function 'con_status_t http_handler()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:45:29: warning: variable 'gprs_conn_retry_time' set but not used [-Wunused-but-set-variable]
+   45 |         static unsigned int gprs_conn_retry_time = 0;
+      |                             ^~~~~~~~~~~~~~~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp: In function 'con_status_t gprs_connect()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:874:69: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  874 |                                                 ((temp_date_time.hr >= 0) && (temp_date_time.hr <= 23)) &&
+      |                                                   ~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:875:70: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  875 |                                                 ((temp_date_time.min >= 0) && (temp_date_time.min <= 59)) &&
+      |                                                   ~~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:876:70: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  876 |                                                 ((temp_date_time.sec >= 0) && (temp_date_time.sec <= 59)))
+      |                                                   ~~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp: In function 'con_status_t gprs_connect_status()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:1034:77: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1034 |                                                         ((temp_date_time.hr >= 0) && (temp_date_time.hr <= 23)) &&
+      |                                                           ~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:1035:78: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1035 |                                                         ((temp_date_time.min >= 0) && (temp_date_time.min <= 59)) &&
+      |                                                           ~~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:1036:78: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+ 1036 |                                                         ((temp_date_time.sec >= 0) && (temp_date_time.sec <= 59)))
+      |                                                           ~~~~~~~~~~~~~~~~~~~^~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:15:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.cpp:11:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[10/25] Building CXX object esp-idf/WEB_COMM/CMakeFiles/__idf_WEB_COMM.dir/web_comm.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/WEB_COMM/web_comm.cpp:10:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/WEB_COMM/web_comm.cpp:9:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+[11/25] Linking C static library esp-idf\GPRS\libGPRS.a
+[12/25] Linking C static library esp-idf\GPIO\libGPIO.a
+[13/25] Linking C static library esp-idf\app_comm\libapp_comm.a
+[14/25] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:23:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: In function 'void app_main()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:130:20: warning: unused variable 'counter' [-Wunused-variable]
+  130 |         static int counter=0;
+      |                    ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:215:22: warning: right shift count >= width of type [-Wshift-count-overflow]
+  215 |         if((GPIO.out >> 32)&1)
+      |             ~~~~~~~~~^~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:130:20: warning: 'counter' defined but not used [-Wunused-variable]
+  130 |         static int counter=0;
+      |                    ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:14:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[15/25] Linking C static library esp-idf\GPS\libGPS.a
+[16/25] Linking C static library esp-idf\Clock\libClock.a
+[17/25] Linking C static library esp-idf\EEPROM\libEEPROM.a
+[18/25] Linking C static library esp-idf\SD_CARD\libSD_CARD.a
+[19/25] Linking C static library esp-idf\ERROR\libERROR.a
+[20/25] Linking C static library esp-idf\WEB_COMM\libWEB_COMM.a
+[21/25] Linking C static library esp-idf\main\libmain.a
+[22/25] Generating ld/sections.ld
+[23/25] Linking CXX executable DL_cpp_test.elf
+[24/25] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin
+[25/25] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/partition_table/partition-table.bin D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin"
+DL_cpp_test.bin binary size 0x58d30 bytes. Smallest app partition is 0x100000 bytes. 0xa72d0 bytes (65%) free.

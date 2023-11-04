@@ -1,0 +1,87 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\bootloader\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:23:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: In function 'void app_main()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:131:20: warning: unused variable 'counter' [-Wunused-variable]
+  131 |         static int counter=0;
+      |                    ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:131:20: warning: 'counter' defined but not used [-Wunused-variable]
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:14:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[3/9] Building CXX object esp-idf/SD_CARD/CMakeFiles/__idf_SD_CARD.dir/Handle_sdcard.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:26:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void init_sdcard()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:76:5: warning: missing initializer for member 'esp_vfs_fat_mount_config_t::disk_status_check_enable' [-Wmissing-field-initializers]
+   76 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data4_io_num' [-Wmissing-field-initializers]
+   92 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data5_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data6_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::data7_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::isr_cpu_id' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:92:5: warning: missing initializer for member 'spi_bus_config_t::intr_flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void deinitialize_sdcard()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:149:30: warning: 'esp_err_t esp_vfs_fat_sdmmc_unmount()' is deprecated: Please use esp_vfs_fat_sdcard_unmount instead [-Wdeprecated-declarations]
+  149 |     esp_vfs_fat_sdmmc_unmount();
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:10:
+C:/Users/DELL/esp/esp-idf/components/fatfs/vfs/esp_vfs_fat.h:197:11: note: declared here
+  197 | esp_err_t esp_vfs_fat_sdmmc_unmount(void) __attribute__((deprecated("Please use esp_vfs_fat_sdcard_unmount instead")));
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:148:19: warning: unused variable 'card' [-Wunused-variable]
+  148 |     sdmmc_card_t* card;
+      |                   ^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void update_ram_data()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:311:17: warning: unused variable 'sd_retry_cnt' [-Wunused-variable]
+  311 |     static char sd_retry_cnt;
+      |                 ^~~~~~~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:311:17: warning: 'sd_retry_cnt' defined but not used [-Wunused-variable]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:58:17: warning: 'log_no' defined but not used [-Wunused-variable]
+   58 | static uint32_t log_no=0;
+      |                 ^~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:29:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:21:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[4/9] Linking C static library esp-idf\SD_CARD\libSD_CARD.a
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable DL_cpp_test.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin
+[9/9] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/partition_table/partition-table.bin D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/DL_cpp_test.bin"
+DL_cpp_test.bin binary size 0x57ce0 bytes. Smallest app partition is 0x100000 bytes. 0xa8320 bytes (66%) free.

@@ -1,0 +1,107 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Projects\Data_LoggerESP32\Current\Data_Logger\build\bootloader\esp-idf\esptool_py && C:\Users\DELL\esp\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Users/DELL/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Projects/Data_LoggerESP32/Current/Data_Logger/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/13] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj 
+ccache C:\Users\DELL\esp\Espressif\tools\xtensa-esp32-elf\esp-12.2.0_20230208\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe -DESP_PLATFORM -DIDF_VER=\"v5.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/build/config -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/main -IC:/Users/DELL/esp/esp-idf/components/newlib/platform_include -IC:/Users/DELL/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/DELL/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/DELL/esp/esp-idf/components/freertos/esp_additions/include/freertos -IC:/Users/DELL/esp/esp-idf/components/freertos/esp_additions/include -IC:/Users/DELL/esp/esp-idf/components/freertos/esp_additions/arch/xtensa/include -IC:/Users/DELL/esp/esp-idf/components/esp_hw_support/include -IC:/Users/DELL/esp/esp-idf/components/esp_hw_support/include/soc -IC:/Users/DELL/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/DELL/esp/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/DELL/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -IC:/Users/DELL/esp/esp-idf/components/heap/include -IC:/Users/DELL/esp/esp-idf/components/log/include -IC:/Users/DELL/esp/esp-idf/components/soc/include -IC:/Users/DELL/esp/esp-idf/components/soc/esp32 -IC:/Users/DELL/esp/esp-idf/components/soc/esp32/include -IC:/Users/DELL/esp/esp-idf/components/hal/esp32/include -IC:/Users/DELL/esp/esp-idf/components/hal/include -IC:/Users/DELL/esp/esp-idf/components/hal/platform_port/include -IC:/Users/DELL/esp/esp-idf/components/esp_rom/include -IC:/Users/DELL/esp/esp-idf/components/esp_rom/include/esp32 -IC:/Users/DELL/esp/esp-idf/components/esp_rom/esp32 -IC:/Users/DELL/esp/esp-idf/components/esp_common/include -IC:/Users/DELL/esp/esp-idf/components/esp_system/include -IC:/Users/DELL/esp/esp-idf/components/esp_system/port/soc -IC:/Users/DELL/esp/esp-idf/components/esp_system/port/include/private -IC:/Users/DELL/esp/esp-idf/components/xtensa/include -IC:/Users/DELL/esp/esp-idf/components/xtensa/esp32/include -IC:/Users/DELL/esp/esp-idf/components/lwip/include -IC:/Users/DELL/esp/esp-idf/components/lwip/include/apps -IC:/Users/DELL/esp/esp-idf/components/lwip/include/apps/sntp -IC:/Users/DELL/esp/esp-idf/components/lwip/lwip/src/include -IC:/Users/DELL/esp/esp-idf/components/lwip/port/include -IC:/Users/DELL/esp/esp-idf/components/lwip/port/freertos/include -IC:/Users/DELL/esp/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/DELL/esp/esp-idf/components/lwip/port/esp32xx/include/arch -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Shubham -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/timer -IC:/Users/DELL/esp/esp-idf/components/driver/include -IC:/Users/DELL/esp/esp-idf/components/driver/deprecated -IC:/Users/DELL/esp/esp-idf/components/driver/analog_comparator/include -IC:/Users/DELL/esp/esp-idf/components/driver/dac/include -IC:/Users/DELL/esp/esp-idf/components/driver/gpio/include -IC:/Users/DELL/esp/esp-idf/components/driver/gptimer/include -IC:/Users/DELL/esp/esp-idf/components/driver/i2c/include -IC:/Users/DELL/esp/esp-idf/components/driver/i2s/include -IC:/Users/DELL/esp/esp-idf/components/driver/ledc/include -IC:/Users/DELL/esp/esp-idf/components/driver/mcpwm/include -IC:/Users/DELL/esp/esp-idf/components/driver/parlio/include -IC:/Users/DELL/esp/esp-idf/components/driver/pcnt/include -IC:/Users/DELL/esp/esp-idf/components/driver/rmt/include -IC:/Users/DELL/esp/esp-idf/components/driver/sdio_slave/include -IC:/Users/DELL/esp/esp-idf/components/driver/sdmmc/include -IC:/Users/DELL/esp/esp-idf/components/driver/sigma_delta/include -IC:/Users/DELL/esp/esp-idf/components/driver/spi/include -IC:/Users/DELL/esp/esp-idf/components/driver/temperature_sensor/include -IC:/Users/DELL/esp/esp-idf/components/driver/touch_sensor/include -IC:/Users/DELL/esp/esp-idf/components/driver/twai/include -IC:/Users/DELL/esp/esp-idf/components/driver/uart/include -IC:/Users/DELL/esp/esp-idf/components/driver/usb_serial_jtag/include -IC:/Users/DELL/esp/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/DELL/esp/esp-idf/components/esp_pm/include -IC:/Users/DELL/esp/esp-idf/components/esp_ringbuf/include -IC:/Users/DELL/esp/esp-idf/components/esp_timer/include -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPIO -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/MCP23017 -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/PINS -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Debug -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/app_comm -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/config -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPS -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/WEB_COMM -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/RTC -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/EEPROM -IC:/Users/DELL/esp/esp-idf/components/nvs_flash/include -IC:/Users/DELL/esp/esp-idf/components/spi_flash/include -IC:/Users/DELL/esp/esp-idf/components/esp_partition/include -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD -IC:/Users/DELL/esp/esp-idf/components/fatfs/diskio -IC:/Users/DELL/esp/esp-idf/components/fatfs/vfs -IC:/Users/DELL/esp/esp-idf/components/fatfs/src -IC:/Users/DELL/esp/esp-idf/components/wear_levelling/include -IC:/Users/DELL/esp/esp-idf/components/sdmmc/include -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC -IC:/Users/DELL/esp/esp-idf/components/esp_adc/include -IC:/Users/DELL/esp/esp-idf/components/esp_adc/interface -IC:/Users/DELL/esp/esp-idf/components/esp_adc/esp32/include -IC:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include -ID:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ERROR -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=D:/Projects/Data_LoggerESP32/Current/Data_Logger=. -fmacro-prefix-map=C:/Users/DELL/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu++2b -fno-exceptions -fno-rtti -std=gnu++17 -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\DL_cpp_test.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/DL_cpp_test.cpp.obj -c D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:23:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: In function 'void app_main()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:94:5: error: 'eeproSdmWriteRate' was not declared in this scope; did you mean 'eepromSdWriteRate'?
+   94 |     eeproSdmWriteRate();
+      |     ^~~~~~~~~~~~~~~~~
+      |     eepromSdWriteRate
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:128:20: warning: unused variable 'counter' [-Wunused-variable]
+  128 |         static int counter=0;
+      |                    ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:128:20: warning: 'counter' defined but not used [-Wunused-variable]
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/main/DL_cpp_test.cpp:14:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[3/13] Building CXX object esp-idf/Clock/CMakeFiles/__idf_Clock.dir/clock.cpp.obj
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp: In function 'uint8_t check_RTC_time()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:247:31: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  247 |            ((ram_data.time.hr >= 0) && (ram_data.time.hr <= 23)) &&
+      |              ~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:248:32: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  248 |            ((ram_data.time.min >= 0) && (ram_data.time.min <= 59)) &&
+      |              ~~~~~~~~~~~~~~~~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:249:32: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  249 |            ((ram_data.time.sec >= 0) && (ram_data.time.sec <= 59)))
+      |              ~~~~~~~~~~~~~~~~~~^~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:11:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/GPRS/gprs.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Clock/clock.cpp:6:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[4/13] Building CXX object esp-idf/EEPROM/CMakeFiles/__idf_EEPROM.dir/EEPROM.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/EEPROM/EEPROM.cpp:13:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/EEPROM/EEPROM.cpp:12:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+[5/13] Building CXX object esp-idf/SD_CARD/CMakeFiles/__idf_SD_CARD.dir/Handle_sdcard.cpp.obj
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:4,
+                 from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:26:
+C:/Users/DELL/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/ADC/adc.h:5:
+C:/Users/DELL/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void init_sdcard()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:84:5: warning: missing initializer for member 'esp_vfs_fat_mount_config_t::disk_status_check_enable' [-Wmissing-field-initializers]
+   84 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::data4_io_num' [-Wmissing-field-initializers]
+  100 |     };
+      |     ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::data5_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::data6_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::data7_io_num' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::isr_cpu_id' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:100:5: warning: missing initializer for member 'spi_bus_config_t::intr_flags' [-Wmissing-field-initializers]
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'void printHeader()':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:160:11: warning: unused variable 'i' [-Wunused-variable]
+  160 |       int i = 0;
+      |           ^
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: In function 'char read_sdcard(const char*, long int)':
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:401:19: warning: left shift count >= width of type [-Wshift-count-overflow]
+  401 |   GPIO.out |= (1UL<<32);
+      |                ~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:441:20: warning: left shift count >= width of type [-Wshift-count-overflow]
+  441 |   GPIO.out &= ~(1UL<<32);
+      |                 ~~~^~~~
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp: At global scope:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:60:17: warning: 'log_no' defined but not used [-Wunused-variable]
+   60 | static uint32_t log_no=0;
+      |                 ^~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:29:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/UART/UART.h:18:20: warning: 'UART_TAG' defined but not used [-Wunused-variable]
+   18 | static const char *UART_TAG = "uart_events";
+      |                    ^~~~~~~~
+In file included from D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/SD_CARD/Handle_sdcard.cpp:21:
+D:/Projects/Data_LoggerESP32/Current/Data_Logger/components/Common/Common.h:21:21: warning: 'isr_mutex_global' defined but not used [-Wunused-variable]
+   21 | static portMUX_TYPE isr_mutex_global = portMUX_INITIALIZER_UNLOCKED;
+      |                     ^~~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.
