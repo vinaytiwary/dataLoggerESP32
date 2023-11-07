@@ -23,6 +23,6 @@
 //#define DEBUG_ADC
 //#define DEBUG_MILLIS
 //#define DEBUG_WC_MILLIS
-#define DEBUG_READ_SDCARD
+//#define DEBUG_READ_SDCARD
 
 #endif
